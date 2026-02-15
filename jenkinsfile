@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') { // Define a stage
         steps {
-                echo 'pulling...'
+                git branch: 'main', url: 'https://github.com/iamtruptimane/ECS-blue-green-deployment.git'
             }
         }
         stage('build') {
